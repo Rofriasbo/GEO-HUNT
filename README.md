@@ -1,6 +1,3 @@
-
-
-````markdown
 # 🌍 GeoHunt
 
 > **La plataforma definitiva de exploración y geolocalización.**
@@ -12,6 +9,7 @@
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
 ---
+
 
 ## 🔗 Referencia del Repositorio
 
