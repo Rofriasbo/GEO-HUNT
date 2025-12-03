@@ -131,5 +131,17 @@ Copia el siguiente bloque y pégalo dentro de la etiqueta raíz `<manifest>` de 
 | `READ_MEDIA_IMAGES` | Permiso moderno para acceder a la galería de imágenes. |
 | `READ_EXTERNAL_STORAGE` | Permiso heredado para acceder a la galería. |
 
-```
-```
+## 5\. Cambios en AndroidManifest
+Para la configuración del canal de notificaciones que se utiliza en las funciones de Cloud, conectadas a Firebase Messaging, es necesario crear un canal dedicado a lo que son las notificaciones push del proyecto, así como viene indicado a continuación:
+  ```xml
+    <meta-data
+        android:name="com.google.firebase.messaging.default_notification_channel_id"
+        android:value="treasure_alerts" />
+    <meta-data
+        android:name="com.google.firebase.messaging.default_notification_icon"
+        android:resource="@drawable/tesoro" />
+  ```
+    
+## 6\. Añadido del ícono en la carpeta drawable
+Importante ubicar la ruta desde android/app/src/main/res/drawable, para ingresar el archivo png con el nombre de "tesoro", puesto en la carpeta de assets, ya que de no ser así, marcará error al no encontrar la referencia. Dentro de esta ubicación, debería de estar ya incluído un archivo png con el nombre de "ic_launcher".
+
