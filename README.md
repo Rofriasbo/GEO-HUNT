@@ -1,8 +1,14 @@
-Entendido. El usuario necesita añadir la información de la cuenta de administrador de prueba al documento Markdown para facilitar la configuración inicial en el entorno de un nuevo desarrollador, especialmente debido a la limitación de la llave de clave azul (SHA-1) en Google Sign-In.
+# 🌍 GeoHunt
 
-Añadiré la sección al inicio del documento, con énfasis, como lo solicitaste.
+> **La plataforma definitiva de exploración y geolocalización.**
+> *Conecta el mundo físico con el virtual: esconde tesoros digitales y cázalos usando tecnología GPS de vanguardia y sensores de movimiento.*
 
-Aquí tienes el contenido final para tu archivo **`dependencias.md`**:
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+
+---
 
 ````markdown
 # 🌍 Dependencias y Configuración del Proyecto GeoHunt
