@@ -1,3 +1,4 @@
+
 # 🌍 GeoHunt
 
 > **La plataforma definitiva de exploración y geolocalización.**
@@ -9,7 +10,6 @@
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
 ---
-
 
 ## 🔗 Referencia del Repositorio
 
@@ -32,7 +32,7 @@ Las librerías requeridas se encuentran en el archivo **`pubspec.yaml`**.
 
 ### 1.1 Bloque para Copiar en `pubspec.yaml`
 
-Este bloque contiene todas las dependencias principales y puede ser copiado directamente en la sección `dependencies:` de tu archivo `pubspec.yaml` (asegúrate de mantener la indentación correcta).
+Copia este bloque en la sección `dependencies:` de tu archivo `pubspec.yaml`.
 
 ```yaml
   # FIREBASE (Versiones compatibles actualizadas)
@@ -72,7 +72,7 @@ Las funciones en la nube (ubicadas en la carpeta `functions/`) utilizan el archi
 
 | Librería | Versión | Función Principal |
 | :--- | :--- | :--- |
-| `firebase-admin` | `^12.0.0` | SDK de administrador para interactuar con Firestore y FCM. |
+| `firebase-admin` | `^12.0.0` | SDK de administrador para interactuar con Firestore y Messaging. |
 | `firebase-functions` | `^5.0.1` | Módulo para crear funciones en la nube. |
 | `geolib` | `^3.3.4` | Cálculos de distancia geocéntrica para notificaciones de cercanía. |
 
@@ -106,6 +106,21 @@ npm install
 El archivo modificado para registrar los permisos de la aplicación en Android es:
 
 ➡️ **`android/app/src/main/AndroidManifest.xml`**
+
+### 4.1 Bloque para Copiar en `AndroidManifest.xml`
+
+Copia el siguiente bloque y pégalo dentro de la etiqueta raíz `<manifest>` de tu archivo `AndroidManifest.xml`, preferiblemente justo antes de la etiqueta `<application>`.
+
+```xml
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+<uses-permission android:name="android.permission.CAMERA"/>
+```
+
+### 4.2 Resumen de Permisos
 
 | Permiso | Descripción y Justificación |
 | :--- | :--- |
